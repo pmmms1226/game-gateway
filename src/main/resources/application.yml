@@ -11,27 +11,27 @@ spring:
         - id: mission
           uri: http://localhost:8081
           predicates:
-            - Path=/missions/** 
+            - Path=/missions/**
         - id: reward
           uri: http://localhost:8082
           predicates:
-            - Path=/rewards/** 
+            - Path=/rewards/**
         - id: wallet
           uri: http://localhost:8083
           predicates:
-            - Path=/wallets/** 
+            - Path=/wallets/**
         - id: gift
           uri: http://localhost:8084
           predicates:
-            - Path=/gifts/** 
+            - Path=/gifts/**
         - id: mypage
           uri: http://localhost:8085
           predicates:
             - Path=/mypages/**
-        - id: payment
+        - id: kakaotalk
           uri: http://localhost:8086
           predicates:
-            - Path=/accounts/**
+            - Path=/kakaoTalks/**
       globalcors:
         corsConfigurations:
           '[/**]':
@@ -54,27 +54,27 @@ spring:
         - id: mission
           uri: http://game-mission:8080
           predicates:
-            - Path=/missions/** 
+            - Path=/missions/**
         - id: reward
           uri: http://game-reward:8080
           predicates:
-            - Path=/rewards/** 
+            - Path=/rewards/**
         - id: wallet
           uri: http://game-wallet:8080
           predicates:
-            - Path=/wallets/** 
+            - Path=/wallets/**
         - id: gift
           uri: http://game-gift:8080
           predicates:
-            - Path=/gifts/** 
+            - Path=/gifts/**
         - id: mypage
           uri: http://game-mypage:8080
           predicates:
             - Path=/mypages/**
-        - id: payment
-          uri: http://game-payment:8080
+        - id: kakaotalk
+          uri: http://game-kakaotalk:8080
           predicates:
-            - Path=/accounts/**
+            - Path=/kakaoTalks/**
       globalcors:
         corsConfigurations:
           '[/**]':
